@@ -1,0 +1,181 @@
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+/* 1 */
+.shadowButton {
+    width: 250px;
+    height: 70px;
+    color: white;
+    background-color: lightpink;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 5px;
+    box-shadow: 3px 3px 5px black, inset 3px 3px 5px white;
+    text-shadow: 3px 3px 5px black;
+    font-size: 17px;
+
+}
+
+.buttonSection {
+    width: 400px;
+    height: 200px;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:active {
+
+    box-shadow: inset 3px 3px 5px black, inset -3px -3px 5px white;
+    text-shadow: 1px 1px 3px black;
+
+
+}
+
+/* 2 */
+article {
+    width: 300px;
+    padding: 10px 10px;
+
+}
+
+.articleDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.articleDiv2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: brown;
+}
+
+.pharagraph_article {
+    color: red;
+}
+
+.articleButton {
+    width: 55px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.articleImage {
+    width: 100%;
+    height: 100%;
+}
+
+article:hover {
+    box-shadow: 0px 0px 5px red
+}
+
+.articleImage:hover {
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+/* 3 */
+.TEXT {
+    font-size: 140px;
+    color: red;
+    letter-spacing: 20px;
+    animation-name: textanimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textanimation {
+    0% {
+        text-shadow: 0 0 20px blue, 0 0 30px blue;
+    }
+
+    25% {
+        text-shadow: 0 0 20px red, 0 0 30px red;
+
+
+    }
+
+    75% {
+        text-shadow: 0 0 20px cyan, 0 0 30px cyan;
+    }
+
+}
+
+/* 5 */
+header {
+    padding: 30px 80px;
+    background-color: rgb(10, 80, 76);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerList {
+    display: flex;
+    gap: 50px;
+}
+
+
+.listItem {
+    text-shadow: 2px 2px 7px black;
+    transition: all 1s;
+
+}
+
+.listItem:hover {
+    text-shadow: 0 0 5px purple, 0 0 25px darkorchid, 0 0 10px purple;
+}
+
+/* 6 */
+
+.animationDiv {
+    width: 600px;
+    height: 25px;
+    border: 2px solid black;
+    background-color: grey;
+    border-radius: 2px;
+}
+
+.animationDivChild {
+    width: 20px;
+    height: 100%;
+    background-color: aqua;
+    animation: divanimation 11s ease-in-out forwards;
+
+
+
+}
+
+@keyframes divanimation {
+    from {
+        width: 20px;
+    }
+
+    to {
+        width: 100%
+    }
+}
